@@ -1,0 +1,14 @@
+.head {
+  margin: 0;
+  background-color: rgb(46, 240, 143);
+  height: 500px;
+  display: flex;
+}
+.material-icons-round {
+  font-size: 50px;
+  align-items: flex-start;
+}
+.intro {
+  align-items: center;
+  justify-content: center;
+}
