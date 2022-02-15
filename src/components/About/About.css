@@ -1,11 +1,5 @@
-@import url("../general.css");
-
-.About-head {
-  font-family: Cantique-Normal;
-  color: var(--major1);
-  /* font-size: 50px; */
-  display: flex;
-  flex-direction: row;
-  /* background-color: red; */
-  margin-left: 25px;
+.about-disc {
+  margin: 25px;
+  padding-right: 30%;
+  font-size: 17px;
 }

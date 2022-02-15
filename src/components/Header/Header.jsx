@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
-import { Row, Col, Container } from "react-bootstrap";
-import dropdown from "../General.js";
+import { Row, Col, Container } from "reactstrap";
+// import dropdown from "../General.js";
 
 function Dropdown(x) {
   return (
@@ -9,9 +9,11 @@ function Dropdown(x) {
       <Container>
         <Row className="dropdown-btns">
           {x.map((s) => (
-            <a href={s.src} className="a">
-              <Col style={{ maxWidth: "100%" }}>{s.Name}</Col>
-            </a>
+            <Col className="but">
+              <a href={s.src} className="btn-lnk">
+                {s.Name}
+              </a>
+            </Col>
           ))}
         </Row>
       </Container>
@@ -19,11 +21,30 @@ function Dropdown(x) {
   );
 }
 
+const dropdown = [
+  {
+    Name: "A",
+    src: "#",
+  },
+  {
+    Name: "B",
+    src: "#",
+  },
+  {
+    Name: "C",
+    src: "#",
+  },
+  {
+    Name: "D",
+    src: "#",
+  },
+];
+
 function Header() {
   return (
     <div className="head">
       <div className="dropdown">
-        <Container fluid>{Dropdown(dropdown)}</Container>
+        <div>{Dropdown(dropdown)}</div>
       </div>
       <div className="intro">
         <h2> {">"} Hello world! 👋</h2>
