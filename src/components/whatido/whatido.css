@@ -1,0 +1,11 @@
+#icon {
+  width: 50%;
+}
+@media (max-width: 480px) {
+  #icon {
+    width: 50px;
+  }
+  .k {
+    flex-wrap: wrap;
+  }
+}

@@ -11,9 +11,32 @@ h1 {
 .footer {
   background-color: #1c7c54;
   height: fit-content;
+  margin: 0;
+  padding-bottom: 1em;
 }
 .footer h1 {
   color: #def4c6;
+  margin-bottom: 0;
+}
+.footer a {
+  color: #def4c6;
+  margin: 0.5em;
+  margin-bottom: 0;
+  font-size: 2.5em;
+}
+.footer a :hover {
+  transition: 0.5s;
+  color: #b1cf5f;
+}
+
+@media (max-width: 420px) {
+  #footicon {
+    width: 50%;
+  }
+
+  .l {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

@@ -1,5 +1,6 @@
 /* @import url("../general.css" */
 /* Colors */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 h1 {
   font-family: Cantique-Normal;
   color: #1c7c54;
@@ -8,20 +9,26 @@ h1 {
   margin-left: 25px;
   padding-top: 40px;
 }
+
 @font-face {
   font-family: Cantique-Normal;
   src: url(../assets/Cantique-Normal.otf);
 }
 .head {
-  margin: 0;
   height: 500px;
-  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   background-color: #1c7c54;
 }
 
-.dropdown-btns {
+#drop {
+  position: fixed;
+  display: flex;
+  width: 102%;
+  z-index: 99;
   background-color: #1c7c54;
-  padding-top: 2.5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
 }
 
 .but {
@@ -45,14 +52,21 @@ h1 {
 
 .intro {
   font-family: Cantique-Normal;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  margin-left: 20%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  position: relative;
+  top: 40%;
   margin-left: 300px;
   color: #def4c6;
+}
+
+@media (max-width: 480px) {
+  #drop {
+    display: none;
+  }
+
+  .intro {
+    margin: auto;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=Header.css.map */

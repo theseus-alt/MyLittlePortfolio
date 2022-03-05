@@ -1,41 +1,43 @@
 import React from "react";
 import blendList from "./blendList";
+import "./blends.css";
 import {
   Card,
   CardImg,
-  CardBody,
+  CardImgOverlay,
   CardTitle,
-  CardSubtitle,
   Row,
   Col,
-  CardText,
   Button,
   Collapse,
 } from "reactstrap";
 
 function projectfnc(x) {
   return (
-    <div className="project">
-      <Row>
+    <div
+      className="project"
+      id="3d"
+      style={{ fontFamily: "Montserrat, sans-serif" }}
+    >
+      <Row className="mx-3 blendres">
         {x.map((project) => (
-          <Col>
-            <Card className="project-card" style={{ background: "#def4c6" }}>
-              <CardImg
-                alt="Card image cap"
-                src={project.img}
-                top
-                width="100%"
-              />
-              <CardBody>
-                <CardTitle tag="h5" color="red">
-                  {project.title}
+          <Col className="p-0">
+            <Card
+              style={{
+                background: "#def4c6",
+              }}
+              className="mx-1 mb-1 shadow-sm"
+              inverse
+            >
+              <CardImg alt="Card image cap" src={project.img} top />
+              <CardImgOverlay>
+                <CardTitle tag="h5">
+                  {project.title}{" "}
+                  <a href={project.src} className="text-light">
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
                 </CardTitle>
-                <CardSubtitle className="mb-2 text-muted" tag="h6">
-                  Card subtitle
-                </CardSubtitle>
-                <CardText>{project.desc}</CardText>
-                <Button>Button</Button>
-              </CardBody>
+              </CardImgOverlay>
             </Card>
           </Col>
         ))}
@@ -45,29 +47,29 @@ function projectfnc(x) {
 }
 
 function Blends() {
+  const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div>
       <h1 className="projects-head">My 3D Artworks</h1>
-      <div>{projectfnc(blendList)}</div>
+      <div>{projectfnc(blendList[0])}</div>
 
-      <Button
-        color="primary"
-        onClick={function noRefCheck() {}}
-        style={{
-          marginBottom: "1rem",
-        }}
-      >
-        Toggle
-      </Button>
-      <Collapse>
-        <Card>
-          <CardBody>
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-            terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-            labore wes anderson cred nesciunt sapiente ea proident.
-          </CardBody>
-        </Card>
+      <Collapse isOpen={isOpen}>
+        <div>{projectfnc(blendList[1])}</div>
+        <div>{projectfnc(blendList[2])}</div>
       </Collapse>
+      <div className="d-flex justify-content-center">
+        <Button
+          className="bg-success"
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+          style={{
+            marginBottom: "1rem",
+          }}
+        >
+          {isOpen ? "Show less" : "Show more"}
+        </Button>
+      </div>
     </div>
   );
 }

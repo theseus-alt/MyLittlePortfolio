@@ -1,26 +1,11 @@
-/* Colors */
+@import "../general.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-h1 {
-  font-family: Cantique-Normal;
-  color: #1c7c54;
-  display: flex;
-  flex-direction: row;
-  margin-left: 25px;
-  padding-top: 40px;
-}
-
-@media (max-width: 460px) {
-  h1 {
-    text-align: center;
-  }
-}
 .paras {
   font-family: "Montserrat", sans-serif;
   margin: 25px;
   padding-right: 30%;
   font-size: 20px;
 }
-
 span {
   color: #1c7c54;
   font-weight: bold;
@@ -31,10 +16,7 @@ span {
   .paras {
     padding: 0;
   }
-
   h1 {
     text-align: center;
   }
 }
-
-/*# sourceMappingURL=About.css.map */

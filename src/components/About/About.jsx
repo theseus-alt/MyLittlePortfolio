@@ -2,14 +2,18 @@ import React from "react";
 import "./About.css";
 // import aboutme from "../General.js";
 
-const aboutme =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa est impedit voluptatem, eligendi itaque perferendis. Pariatur voluptatem expedita aut necessitatibus, reiciendis neque accusantium aliquam molestias deserunt numquam itaque magnam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa est impedit voluptatem, eligendi itaque perferendis. Pariatur voluptatem expedita aut necessitatibus, reiciendis neque accusantium aliquam molestias deserunt numquam itaque magnam.";
-
 function About() {
   return (
     <div>
-      <h1 className="about-head">About me</h1>
-      <p className="about-disc">{aboutme}</p>
+      <h1>About me</h1>
+      <p className="paras">
+        A passionate <span>web developer</span> experienced in working with
+        latest technologies like React.js and is enthisiastic to learn something
+        new everyday. I am also adept in coding <span>Bots in Discord</span>{" "}
+        using Libraries such as Discord.py and py-cord. Being a{" "}
+        <span>Mechanical engineer</span>, I also take a leisure interest in{" "}
+        <span>3d modelling</span> and art.
+      </p>
     </div>
   );
 }

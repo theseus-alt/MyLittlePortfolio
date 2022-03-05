@@ -2,7 +2,29 @@
 .footer {
   background-color: $major1;
   height: fit-content;
+  margin: 0;
   h1 {
     color: $white;
+    margin-bottom: 0;
+  }
+  padding-bottom: 1em;
+  a {
+    color: $white;
+    margin: 0.5em;
+    margin-bottom: 0;
+    font-size: 2.5em;
+    :hover {
+      transition: 0.5s;
+      color: $minor2;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  #footicon {
+    width: 50%;
+  }
+  .l {
+    flex-wrap: wrap;
   }
 }
