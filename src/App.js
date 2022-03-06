@@ -6,7 +6,7 @@ import Blends from "./components/blends/Blends";
 import Footer from "./components/Footer/Footer";
 import Education from "./components/Education/Education";
 import Whatido from "./components/whatido/Whatido";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
