@@ -4,6 +4,6 @@ _This site is the home page for my portfolio. It will show previous work history
 
 ## Technologies Used
 
--React-
-_SASS_
-_Bootstrap_
+* _React_
+* _SASS_
+* _Bootstrap_
