@@ -71,6 +71,8 @@ function projectfnc(x) {
                 <Button
                   href={project.src}
                   className="d-flex justify-content-center"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Visit
                 </Button>

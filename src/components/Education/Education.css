@@ -1,5 +1,8 @@
 @media (max-width: 460px) {
   .edu {
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    /* width: 50px; */
   }
 }

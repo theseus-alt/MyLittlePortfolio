@@ -32,7 +32,7 @@ function Whatido() {
         Following are the technologies I have knowledge about and have worked in
         the past.
       </p>
-      <div className="d-flex justify-content-center k">
+      <div className="d-flex mx-4 justify-content-center k">
         {icons.map((icon) => (
           <i class={pre + icon} id="icon"></i>
         ))}
