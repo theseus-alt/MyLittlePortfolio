@@ -17,7 +17,6 @@ const icons = [
     icon: "fa-brands fa-instagram",
     src: "https://www.instagram.com/ritvikgupta2/",
   },
-  // { icon: "fa-brands fa-discord", src: "#" },
   {
     icon: "fa-brands fa-hackerrank",
     src: "https://www.hackerrank.com/ritvikg02",
@@ -35,11 +34,22 @@ function Footer() {
       >
         {icons.map((x) => (
           <ListInlineItem>
-            <a href={x.src}>
+            <a href={x.src} target="_blank" rel="noreferrer">
               <i class={x.icon} id="footicon"></i>
             </a>
           </ListInlineItem>
         ))}
+        <ListInlineItem>
+          <a className="disc">
+            <i
+              class="fa-brands fa-discord"
+              onClick={() => {
+                navigator.clipboard.writeText("yoyoyo");
+                alert("Copied the discord tag!");
+              }}
+            ></i>
+          </a>
+        </ListInlineItem>
       </List>
     </div>
   );

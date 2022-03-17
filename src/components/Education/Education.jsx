@@ -10,7 +10,7 @@ function Education() {
     <div style={{ fontFamily: "Montserrat, sans-serif" }}>
       <h1 id="edu">My Education</h1>
       {/* <div> */}
-      <Card className="mb-5 mx-4 d-flex flex-row edu">
+      <Card className="mb-5 mx-5 d-flex flex-row edu">
         <div className="image">
           <img src={uiet} height={"200px"} width={"200px"} alt="" />
         </div>
@@ -18,7 +18,12 @@ function Education() {
           <div>
             <CardTitle tag="h4">
               University Institute of Engineering {"&"} Technology{"  "}
-              <a href="https://uiet.puchd.ac.in/" className="text-muted">
+              <a
+                href="https://uiet.puchd.ac.in/"
+                className="text-muted"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="fa-solid fa-up-right-from-square"></i>
               </a>
             </CardTitle>
@@ -32,7 +37,7 @@ function Education() {
           </div>
         </CardBody>
       </Card>
-      <Card className="mb-5 mx-4 d-flex flex-row edu">
+      <Card className="mb-5 mx-5 d-flex flex-row edu">
         <div>
           <img src={cms} height={"200px"} width={"200px"} alt="" />
         </div>
@@ -40,7 +45,12 @@ function Education() {
           <div>
             <CardTitle tag="h4">
               City Montessori School{" "}
-              <a href="http://www.cmseducation.org/" className="text-muted">
+              <a
+                href="http://www.cmseducation.org/"
+                className="text-muted"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="fa-solid fa-up-right-from-square"></i>
               </a>
             </CardTitle>
@@ -54,7 +64,7 @@ function Education() {
           </div>
         </CardBody>
       </Card>
-      <Card className="mb-5 mx-4 d-flex flex-row edu">
+      <Card className="mb-5 mx-5 d-flex flex-row edu">
         <div>
           <img src={spc} alt="" />
         </div>
@@ -62,7 +72,12 @@ function Education() {
           <div>
             <CardTitle tag="h4">
               St. Peter's College{" "}
-              <a href="https://www.stpetersagra.org/" className="text-muted">
+              <a
+                href="https://www.stpetersagra.org/"
+                className="text-muted"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="fa-solid fa-up-right-from-square"></i>
               </a>
             </CardTitle>

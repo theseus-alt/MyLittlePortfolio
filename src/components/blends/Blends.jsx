@@ -33,7 +33,12 @@ function projectfnc(x) {
               <CardImgOverlay>
                 <CardTitle tag="h5">
                   {project.title}{" "}
-                  <a href={project.src} className="text-light">
+                  <a
+                    href={project.src}
+                    className="text-light"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="fa-solid fa-up-right-from-square"></i>
                   </a>
                 </CardTitle>

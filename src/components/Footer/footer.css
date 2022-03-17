@@ -1,13 +1,3 @@
-/* Colors */
-h1 {
-  font-family: Cantique-Normal;
-  color: #1c7c54;
-  display: flex;
-  flex-direction: row;
-  margin-left: 25px;
-  padding-top: 40px;
-}
-
 .footer {
   background-color: #1c7c54;
   height: fit-content;
@@ -17,6 +7,10 @@ h1 {
 .footer h1 {
   color: #def4c6;
   margin-bottom: 0;
+}
+.footer .disk {
+  color: #def4c6;
+  cursor: pointer;
 }
 .footer a {
   color: #def4c6;

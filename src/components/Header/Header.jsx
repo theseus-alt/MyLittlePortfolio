@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+// import { useEffect, useState } from "react";
 import "./Header.css";
 import { Row, Col, Container } from "reactstrap";
 // import dropdown from "../General.js";
@@ -38,31 +39,35 @@ function Dropdown(x) {
   );
 }
 
-function HandleScroll() {
-  const [offset, setOffset] = useState(0);
+// function HandleScroll() {
+//   const [offset, setOffset] = useState(0);
 
-  useEffect(() => {
-    const onScroll = () => setOffset(window.pageYOffset);
-    // clean up code
-    window.removeEventListener("scroll", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-  // document.getElementsByClassName("dropdown-btns")[0].style.display = "none";
-  // console.log(offset);
-  if (offset > 400) {
-    // console.log(offset);
-    // document.getElementById("drop").style.display = "flex";
-  } else {
-    // document.getElementsByClassName("dropdown-btns")[0].style.display = "flex";
-    // document.getElementById("drop").style.display = "none";
-  }
-}
+//   useEffect(() => {
+//     const onScroll = () => setOffset(window.pageYOffset);
+//     // clean up code
+//     window.removeEventListener("scroll", onScroll);
+//     window.addEventListener("scroll", onScroll, { passive: true });
+//     return () => window.removeEventListener("scroll", onScroll);
+//   }, []);
+//   // document.getElementsByClassName("dropdown-btns")[0].style.display = "none";
+//   // console.log(offset);
+//   if (offset > 400) {
+//     // console.log(offset);
+//     // document.getElementById("drop").style.display = "flex";
+//   } else {
+//     // document.getElementsByClassName("dropdown-btns")[0].style.display = "flex";
+//     // document.getElementById("drop").style.display = "none";
+//   }
+// }
 
 function Header() {
   return (
     <div className="head m-0">
-      <div onScroll={HandleScroll()}>{Dropdown(dropdown)}</div>
+      <div
+      // onScroll={HandleScroll()}
+      >
+        {Dropdown(dropdown)}
+      </div>
 
       <div className="intro">
         <Container>

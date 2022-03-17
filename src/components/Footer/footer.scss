@@ -1,4 +1,19 @@
-@import "../general.scss";
+// @import "../general.scss";
+
+$major1: #1c7c54;
+$major2: #73e2a7;
+$white: #def4c6;
+$minor1: #1b512d;
+$minor2: #b1cf5f;
+$black: #111820;
+
+// @media (max-width: 460px) {
+//   h1 {
+//     text-align: center;
+//     // color: red;
+//   }
+// }
+
 .footer {
   background-color: $major1;
   height: fit-content;
@@ -8,6 +23,10 @@
     margin-bottom: 0;
   }
   padding-bottom: 1em;
+  .disk {
+    color: $white;
+    cursor: pointer;
+  }
   a {
     color: $white;
     margin: 0.5em;
