@@ -44,7 +44,7 @@ function Footer() {
             <i
               class="fa-brands fa-discord"
               onClick={() => {
-                navigator.clipboard.writeText("yoyoyo");
+                navigator.clipboard.writeText("Theseus#7429");
                 alert("Copied the discord tag!");
               }}
             ></i>
