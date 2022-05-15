@@ -23,6 +23,20 @@
   color: #b1cf5f;
 }
 
+.disc{
+  color: #def4c6;
+  margin: 0.5em;
+  margin-bottom: 0;
+  font-size: 2.5em;
+  background-color: transparent;
+  border-style: none;
+  margin-top: 0;
+}
+.disc :hover{
+  transition: 0.5s;
+  color: #b1cf5f;
+}
+
 @media (max-width: 420px) {
   #footicon {
     width: 50%;
