@@ -40,15 +40,15 @@ function Footer() {
           </ListInlineItem>
         ))}
         <ListInlineItem>
-          <a className="disc">
+          <button className="disc" >
             <i
               class="fa-brands fa-discord"
               onClick={() => {
                 navigator.clipboard.writeText("Theseus#7429");
-                alert("Copied the discord tag!");
+                alert("Discord tag copied!");
               }}
             ></i>
-          </a>
+          </button>
         </ListInlineItem>
       </List>
     </div>
