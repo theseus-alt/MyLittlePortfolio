@@ -1,5 +1,5 @@
 import React from "react";
-import "./Education.css";
+import "./Education.scss";
 import { Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import uiet from "../assets/uiet.png";
 import cms from "../assets/cms.jpg";

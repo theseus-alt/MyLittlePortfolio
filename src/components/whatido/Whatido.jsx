@@ -1,7 +1,7 @@
 import React from "react";
 // import CIcon from "@coreui/icons-react";
-import "../About/About.css";
-import "./whatido.css";
+import "../About/About.scss";
+import "./whatido.scss";
 
 const icons = [
   "fa-java",

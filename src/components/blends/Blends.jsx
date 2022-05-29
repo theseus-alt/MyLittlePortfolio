@@ -1,6 +1,6 @@
 import React from "react";
 import blendList from "./blendList";
-import "./blends.css";
+import "./blends.scss";
 import {
   Card,
   CardImg,

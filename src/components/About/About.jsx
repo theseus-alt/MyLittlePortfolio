@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./About.scss"; 
 // import aboutme from "../General.js";
 
 function About() {

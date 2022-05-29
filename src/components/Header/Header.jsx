@@ -1,6 +1,6 @@
 import React from "react";
 // import { useEffect, useState } from "react";
-import "./Header.css";
+import "./Header.scss";
 import { Row, Col, Container } from "reactstrap";
 // import dropdown from "../General.js";
 

@@ -1,6 +1,7 @@
 /* @import url("../general.css" */
 
-@import "../general.scss";
+// @import "../general.scss";
+@import "node_modules/nord/src/sass/nord.scss";
 @font-face {
   font-family: Cantique-Normal;
   src: url(../assets/Cantique-Normal.otf);
@@ -11,14 +12,14 @@
   height: 500px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  background-color: $major1;
+  background-color: $nord0;
 }
 #drop {
   position: fixed;
   display: flex;
   width: 102%;
   z-index: 99;
-  background-color: $major1;
+  background-color: $nord0;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
   // transition: 0.2s top cubic-bezier(0.3, 0.73, 0.3, 0.74);
@@ -26,7 +27,7 @@
   // box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
 }
 .but {
-  background-color: $white;
+  background-color: $nord1;
   margin-right: 25px;
   margin-left: 25px;
   padding: 3px;
@@ -37,8 +38,9 @@
 }
 
 .btn-lnk {
-  color: $black;
+  color: $nord4;
   text-decoration: none;
+  // font-weight:800;
 }
 
 #dropdownbtn:hover .dropdown-btns {
@@ -49,7 +51,7 @@
   position: relative;
   top: 40%;
   margin-left: 300px;
-  color: $white;
+  color: $nord5;
 }
 
 @media (max-width: 480px) {

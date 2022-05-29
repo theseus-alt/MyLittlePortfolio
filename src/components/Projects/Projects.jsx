@@ -1,6 +1,6 @@
 import React from "react";
 // import "../Education/Education.css";
-import "./Projects.css";
+import "./Projects.scss";
 // import projectList from "./projectList";
 import {
   Card,
