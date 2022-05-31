@@ -32,9 +32,9 @@ function Education() {
       <h1 id="edu">My Education</h1>
       {/* <div> */}
       {edu.map((item)=>(
-        <Card className="mb-5 mx-5 d-flex flex-row edu" >
+        <Card className="mb-5 mx-5 d-flex flex-row edu" style={{"backgroundColor":"#d8dee9"}}>
         <div className="image">
-          <img src={item.img} height={"200px"} width={"200px"} alt="" />
+          <img src={item.img} height={"200px"} width={"200px"} alt="" style={{"backgroundColor":"#d8dee9"}}/>
         </div>
         <CardBody className="p-lg-4 d-flex align-items-center edudetails" style={{"backgroundColor":"#d8dee9"}}>
           <div style={{"backgroundColor":"#d8dee9"}}>
