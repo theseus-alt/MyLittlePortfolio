@@ -1,6 +1,6 @@
 import React from "react";
 // import { useEffect, useState } from "react";
-import "./Header.css";
+import "./Header.scss";
 import { Row, Col, Container } from "reactstrap";
 // import dropdown from "../General.js";
 
@@ -70,7 +70,7 @@ function Header() {
       </div>
 
       <div className="intro">
-        <Container>
+        <Container id="cont">
           <h2> {">"} Hello world! 👋</h2>
           <h2> {">"} I'm Ritvik</h2>
         </Container>

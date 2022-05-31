@@ -1,11 +1,6 @@
 // @import "../general.scss";
 
-$major1: #1c7c54;
-$major2: #73e2a7;
-$white: #def4c6;
-$minor1: #1b512d;
-$minor2: #b1cf5f;
-$black: #111820;
+@import "node_modules/nord/src/sass/nord.scss";
 
 // @media (max-width: 460px) {
 //   h1 {
@@ -15,29 +10,42 @@ $black: #111820;
 // }
 
 .footer {
-  background-color: $major1;
+  background-color: $nord1;
   height: fit-content;
   margin: 0;
   h1 {
-    color: $white;
+    color: $nord5;
     margin-bottom: 0;
   }
   padding-bottom: 1em;
-  .disk {
-    color: $white;
-    cursor: pointer;
+  .disc {
+    color: $nord5;
+    margin: 0.5em;
+    margin-bottom: 0;
+    font-size: 2.5em;
+    background-color: transparent;
+    border-style: none;
+    margin-top: 0;
+    :hover{
+      transition: 0.5s;
+      color: $nord10;
+    }
   }
   a {
-    color: $white;
+    color: $nord5;
     margin: 0.5em;
     margin-bottom: 0;
     font-size: 2.5em;
     :hover {
       transition: 0.5s;
-      color: $minor2;
+      color: $nord10;
     }
   }
 }
+
+// *{
+//   background-color: $nord4;
+// }
 
 @media (max-width: 420px) {
   #footicon {

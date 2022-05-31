@@ -1,9 +1,16 @@
 import React from "react";
-import "./footer.css";
+import "./footer.scss";
 import { List, ListInlineItem } from "reactstrap";
 
 const icons = [
-  { icon: "fa-brands fa-github", src: "https://github.com/theseus-alt" },
+  {
+    icon:"fa-brands fa-twitter",
+    src:"https://twitter.com/RitvikGupta01"
+  },
+  {
+    icon: "fa-brands fa-github",
+    src: "https://github.com/theseus-alt"
+  },
   {
     icon: "fa-brands fa-linkedin",
     src: "https://www.linkedin.com/in/ritvik-gupta-a6196a1bb/",
@@ -27,26 +34,28 @@ const icons = [
 function Footer() {
   return (
     <div className="footer" id="con">
-      <h1>Find me here!</h1>
+      <h1 style={{"backgroundColor":"transparent"}}>Find me here!</h1>
       <List
         type="inline"
         className="d-flex justify-content-center mb-5 mt-3 align-items-center l"
+        style={{"backgroundColor":"transparent"}}
       >
         {icons.map((x) => (
-          <ListInlineItem>
-            <a href={x.src} target="_blank" rel="noreferrer">
-              <i class={x.icon} id="footicon"></i>
+          <ListInlineItem style={{"backgroundColor":"transparent"}}>
+            <a href={x.src} target="_blank" rel="noreferrer" style={{"backgroundColor":"transparent"}}>
+              <i class={x.icon} id="footicon" style={{"backgroundColor":"transparent"}}></i>
             </a>
           </ListInlineItem>
         ))}
-        <ListInlineItem>
-          <button className="disc" >
+        <ListInlineItem style={{"backgroundColor":"transparent"}}>
+          <button className="disc" style={{"backgroundColor":"transparent"}}>
             <i
               class="fa-brands fa-discord"
               onClick={() => {
                 navigator.clipboard.writeText("Theseus#7429");
                 alert("Discord tag copied!");
               }}
+              style={{"backgroundColor":"transparent"}}
             ></i>
           </button>
         </ListInlineItem>

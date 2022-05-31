@@ -1,5 +1,7 @@
 // @import "../general.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "node_modules/nord/src/sass/nord.scss";
+
 
 $major1: #1c7c54;
 $major2: #73e2a7;
@@ -7,6 +9,7 @@ $white: #def4c6;
 $minor1: #1b512d;
 $minor2: #b1cf5f;
 $black: #111820;
+
 
 @media (max-width: 460px) {
   h1 {
@@ -35,6 +38,7 @@ h1 {
   // flex-direction: row;
   margin-left: 60px;
   padding-top: 40px;
+  color: $nord1;
   // color: red;
 }
 
@@ -46,8 +50,8 @@ h1 {
   font-size: 20px;
 }
 span {
-  color: #1c7c54;
-  font-weight: bold;
+  color: $nord10;
+  font-weight: 1000;
   font-size: large;
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 // import "../Education/Education.css";
-import "./Projects.css";
+import "./Projects.scss";
 // import projectList from "./projectList";
 import {
   Card,
@@ -47,37 +47,40 @@ function projectfnc(x) {
     >
       <Row className="mx-3 prores">
         {x.map((project) => (
-          <Col className="p-0 mb-3">
-            <Card
-              style={{
-                background: "#def4c6",
-              }}
-              className="mx-2"
-            >
-              <CardImg
-                alt="Card image cap"
-                src={project.img}
-                top
-                width="100%"
-              />
-              <CardBody>
-                <CardTitle tag="h5" color="red">
-                  {project.title}
-                </CardTitle>
-                <CardSubtitle className="mb-2 text-muted" tag="h6">
-                  {project.sub}
-                </CardSubtitle>
-                <CardText>{project.desc}</CardText>
-                <Button
-                  href={project.src}
-                  className="d-flex justify-content-center"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit
-                </Button>
-              </CardBody>
-            </Card>
+          <Col className="p-0 mb-3 projectcol">
+            <div className="hoverclass">
+              <Card
+                className="mx-2"
+                id="card-back"
+              >
+                <CardImg
+                  alt="Card image cap"
+                  src={project.img}
+                  top
+                  width="100%"
+                  style={{"pointerEvents":"none"}}
+                />
+                <CardBody style={{"backgroundColor":"#d8dee9","pointerEvents":"none"}}>
+                  <CardTitle tag="h5" style={{"backgroundColor":"#d8dee9"}}>
+                    {project.title}
+                  </CardTitle>
+                  <CardSubtitle className="mb-2 text-muted" tag="h6" style={{"backgroundColor":"#d8dee9"}}>
+                    {project.sub}
+                  </CardSubtitle>
+                  <CardText style={{"backgroundColor":"#d8dee9"}}>{project.desc}</CardText>
+                  <Button
+                    href={project.src}
+                    className="d-flex justify-content-center"
+                    target="_blank"
+                    rel="noreferrer"
+                    id="button"
+                  >
+                    Visit
+                  </Button>
+                </CardBody>
+              </Card>
+
+            </div>
           </Col>
         ))}
       </Row>

@@ -1,0 +1,18 @@
+@import "node_modules/nord/src/sass/nord.scss";
+
+*{
+  background-color: $nord6;
+}
+#threed, #tit{
+  background-color: transparent;
+}
+@media (max-width: 460px) {
+  .blendres {
+    display: flex;
+    flex-direction: column;
+  }
+}
+// backgroundColor:"#5e81ac"
+#button{
+  margin-bottom: 1rem;
+}
