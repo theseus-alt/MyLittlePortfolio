@@ -16,7 +16,7 @@ function projectfnc(x) {
   return (
     <div
       className="project"
-      id="3d"
+      
       style={{ fontFamily: "Montserrat, sans-serif" }}
     >
       <Row className="mx-3 blendres">
@@ -30,16 +30,17 @@ function projectfnc(x) {
               inverse
             >
               <CardImg alt="Card image cap" src={project.img} top />
-              <CardImgOverlay>
-                <CardTitle tag="h5">
+              <CardImgOverlay id="threed">
+                <CardTitle tag="h5" id="tit">
                   {project.title}{" "}
                   <a
                     href={project.src}
                     className="text-light"
                     target="_blank"
                     rel="noreferrer"
+                    style={{"backgroundColor":"transparent"}}
                   >
-                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <i class="fa-solid fa-up-right-from-square" style={{"backgroundColor":"transparent"}} ></i>
                   </a>
                 </CardTitle>
               </CardImgOverlay>
@@ -64,13 +65,12 @@ function Blends() {
       </Collapse>
       <div className="d-flex justify-content-center">
         <Button
-          className="bg-success"
+          // className="bg-success"
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-          style={{
-            marginBottom: "1rem",
-          }}
+          id="button"
+          style={isOpen?{backgroundColor:"#88c0d0"}:{backgroundColor:"#5e81ac"}}
         >
           {isOpen ? "Show less" : "Show more"}
         </Button>

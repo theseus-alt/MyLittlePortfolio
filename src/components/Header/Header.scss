@@ -27,7 +27,7 @@
   // box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
 }
 .but {
-  background-color: $nord1;
+  background-color: $nord1 !important;
   margin-right: 25px;
   margin-left: 25px;
   padding: 3px;
@@ -38,7 +38,8 @@
 }
 
 .btn-lnk {
-  color: $nord4;
+  color: $nord4 ;
+  background-color: $nord1;
   text-decoration: none;
   // font-weight:800;
 }
@@ -52,6 +53,13 @@
   top: 40%;
   margin-left: 300px;
   color: $nord5;
+  background-color: $nord0;
+  h2{
+    background-color: $nord0;
+  }
+  #cont{
+    background-color: $nord0;
+  }
 }
 
 @media (max-width: 480px) {

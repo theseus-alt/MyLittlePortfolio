@@ -1,6 +1,33 @@
+@import "node_modules/nord/src/sass/nord.scss";
+
+
 @media (max-width: 460px) {
   .prores {
     display: flex;
     flex-direction: column;
   }
+}
+
+#card-back{
+  background-color: $nord5;
+  // pointer-events: none;
+  // pointer-events: none;
+}
+.projectcol{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration:all 4s;
+
+}
+.hoverclass{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration:all 4s;
+  // animation-duration    : 1s; 
+:hover{
+    -webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);  
+  }
+}
+
+#button{
+  background-color: $nord3;
 }

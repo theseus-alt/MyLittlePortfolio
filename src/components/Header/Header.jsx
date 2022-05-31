@@ -70,7 +70,7 @@ function Header() {
       </div>
 
       <div className="intro">
-        <Container>
+        <Container id="cont">
           <h2> {">"} Hello world! 👋</h2>
           <h2> {">"} I'm Ritvik</h2>
         </Container>

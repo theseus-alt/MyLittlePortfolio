@@ -10,6 +10,7 @@ $minor1: #1b512d;
 $minor2: #b1cf5f;
 $black: #111820;
 
+
 @media (max-width: 460px) {
   h1 {
     // position: absolute;
@@ -37,7 +38,7 @@ h1 {
   // flex-direction: row;
   margin-left: 60px;
   padding-top: 40px;
-  color: $nord0;
+  color: $nord1;
   // color: red;
 }
 
@@ -50,7 +51,7 @@ h1 {
 }
 span {
   color: $nord10;
-  font-weight: 100;
+  font-weight: 1000;
   font-size: large;
 }
 
