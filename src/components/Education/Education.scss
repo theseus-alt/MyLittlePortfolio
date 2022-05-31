@@ -1,3 +1,8 @@
+@import "node_modules/nord/src/sass/nord.scss";
+
+.edudetails{
+  background-color: $nord4;
+}
 @media (max-width: 460px) {
   .edu {
     flex-wrap: wrap;

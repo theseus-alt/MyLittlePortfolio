@@ -32,28 +32,29 @@ function Education() {
       <h1 id="edu">My Education</h1>
       {/* <div> */}
       {edu.map((item)=>(
-        <Card className="mb-5 mx-5 d-flex flex-row edu">
+        <Card className="mb-5 mx-5 d-flex flex-row edu" >
         <div className="image">
           <img src={item.img} height={"200px"} width={"200px"} alt="" />
         </div>
-        <CardBody className="p-lg-4 d-flex align-items-center edudetails">
-          <div>
-            <CardTitle tag="h4">
+        <CardBody className="p-lg-4 d-flex align-items-center edudetails" style={{"backgroundColor":"#d8dee9"}}>
+          <div style={{"backgroundColor":"#d8dee9"}}>
+            <CardTitle tag="h4" style={{"backgroundColor":"#d8dee9"}}>
               {item.title}
               <a
                 href="https://uiet.puchd.ac.in/"
                 className="text-muted"
                 target="_blank"
                 rel="noreferrer"
+                style={{"backgroundColor":"#d8dee9"}}
               >
-                <i class="fa-solid fa-up-right-from-square"></i>
+                <i class="fa-solid fa-up-right-from-square" style={{"backgroundColor":"#d8dee9"}}></i>
               </a>
             </CardTitle>
-            <CardSubtitle className="mb-2 text-muted" tag="h5">
+            <CardSubtitle className="mb-2 text-muted" tag="h5" style={{"backgroundColor":"#d8dee9"}}>
               {item.subtitle}
             </CardSubtitle>
             <hr />
-            <CardSubtitle className="mt-3" tag="h5">
+            <CardSubtitle className="mt-3" tag="h5" style={{"backgroundColor":"#d8dee9"}}>
               {item.time}
             </CardSubtitle>
           </div>
