@@ -1,0 +1,23 @@
+@import "node_modules/nord/src/sass/nord.scss";
+
+#card-back {
+  background-color: $nord5;
+}
+
+.dot {
+  height: 7.5px;
+  width: 7.5px;
+  background-color: #767e87;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 460px) {
+  .internimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 65%;
+    overflow: hidden;
+  }
+}

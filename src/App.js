@@ -6,6 +6,7 @@ import Blends from "./components/blends/Blends";
 import Footer from "./components/Footer/Footer";
 import Education from "./components/Education/Education";
 import Whatido from "./components/whatido/Whatido";
+import Intern from "./components/Intern/Intern";
 // import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Education />
       <Whatido />
+      <Intern/>
       <Projects />
       <Blends />
       <Footer />

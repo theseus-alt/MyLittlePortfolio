@@ -20,7 +20,7 @@ const pre = "h1 mx-4 fa-brands ";
 
 function Whatido() {
   return (
-    <div id="wht">
+    <div>
       <h1>What I do</h1>
       <p className="paras">
         I started learning and working with <span>Java</span> when I was in
@@ -34,10 +34,16 @@ function Whatido() {
       </p>
       <div className="d-flex mx-4 justify-content-center k">
         {icons.map((icon) => (
-          <i class={pre + icon} id="icon"></i>
+          <i className={pre + icon} key={icons.indexOf(icon)} id="icon"></i>
         ))}
         {/* <CIcon name="cilAccessibility" size="sm"></CIcon> */}
       </div>
+      <p className="paras">
+        Apart from the above I am also profecient in 3D modeling softwares like
+        <span>Blender</span>, and CAD softwares like{" "}
+        <span>Fusion 360 and solidworks</span>. I have also worked with{" "}
+        <span>ANSYS</span> for simulation and finite element analysis.
+      </p>
     </div>
   );
 }

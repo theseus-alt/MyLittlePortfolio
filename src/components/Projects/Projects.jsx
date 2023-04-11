@@ -47,27 +47,35 @@ function projectfnc(x) {
     >
       <Row className="mx-3 prores">
         {x.map((project) => (
-          <Col className="p-0 mb-3 projectcol">
+          <Col
+            className="p-0 mb-3 projectcol"
+            key={projectList.indexOf(project)}
+          >
             <div className="hoverclass">
-              <Card
-                className="mx-2"
-                id="card-back"
-              >
+              <Card className="mx-2" id="card-back">
                 <CardImg
                   alt="Card image cap"
                   src={project.img}
                   top
                   width="100%"
-                  style={{"pointerEvents":"none"}}
+                  style={{ pointerEvents: "none" }}
                 />
-                <CardBody style={{"backgroundColor":"#d8dee9","pointerEvents":"none"}}>
-                  <CardTitle tag="h5" style={{"backgroundColor":"#d8dee9"}}>
+                <CardBody
+                  style={{ backgroundColor: "#d8dee9", pointerEvents: "none" }}
+                >
+                  <CardTitle tag="h5" style={{ backgroundColor: "#d8dee9" }}>
                     {project.title}
                   </CardTitle>
-                  <CardSubtitle className="mb-2 text-muted" tag="h6" style={{"backgroundColor":"#d8dee9"}}>
+                  <CardSubtitle
+                    className="mb-2 text-muted"
+                    tag="h6"
+                    style={{ backgroundColor: "#d8dee9" }}
+                  >
                     {project.sub}
                   </CardSubtitle>
-                  <CardText style={{"backgroundColor":"#d8dee9"}}>{project.desc}</CardText>
+                  <CardText style={{ backgroundColor: "#d8dee9" }}>
+                    {project.desc}
+                  </CardText>
                   <Button
                     href={project.src}
                     className="d-flex justify-content-center"
@@ -79,7 +87,6 @@ function projectfnc(x) {
                   </Button>
                 </CardBody>
               </Card>
-
             </div>
           </Col>
         ))}

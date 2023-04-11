@@ -1,7 +1,32 @@
 @import "node_modules/nord/src/sass/nord.scss";
 
-.edudetails{
+.edudetails {
   background-color: $nord4;
+}
+
+.feather-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.feather-effect::before,
+.feather-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  z-index: 1;
+}
+
+.feather-effect::after {
+  left: 0;
+  background: linear-gradient(to left, transparent, #d8dee8);
+}
+
+.feather-effect img {
+  position: relative;
+  z-index: 0;
 }
 @media (max-width: 460px) {
   .edu {
@@ -9,8 +34,14 @@
     justify-content: center;
     text-align: center;
     /* width: 50px; */
+    margin-left: 5px;
+    margin-right: 5px;
   }
-  .edudetails{
+  .edudetails {
     justify-content: center;
+    z-index: 1;
+  }
+  .feather-effect {
+    display: none;
   }
 }

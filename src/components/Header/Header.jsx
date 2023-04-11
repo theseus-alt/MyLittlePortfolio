@@ -6,32 +6,50 @@ import { Row, Col, Container } from "reactstrap";
 
 const dropdown = [
   {
+    id: 0,
     Name: "About Me",
     src: "#about",
   },
   {
+    id: 1,
     Name: "Education",
     src: "#edu",
   },
   {
+    id: 2,
     Name: "What I do",
     src: "#wht",
   },
   {
+    id: 3,
+    Name: "Internships",
+    src: "#int",
+  },
+  {
+    id: 4,
     Name: "Projects",
     src: "#pro",
   },
-  { Name: "3D Artworks", src: "#3d" },
-  { Name: "Contact Me", src: "#con" },
+  {
+    id: 5,
+    Name: "3D Artworks",
+    src: "#3d",
+  },
+  {
+    id: 6,
+    Name: "Contact Me",
+    src: "#con",
+  },
 ];
 
 function Dropdown(x) {
   return (
     <Row className="dropdown-btns" id="drop">
       {x.map((s) => (
-        <Col className="but">
+        <Col className="but" key={s.id}>
           <a href={s.src} className="btn-lnk">
             {s.Name}
+            {/* {window.scrollBy(0, -500)} */}
           </a>
         </Col>
       ))}
@@ -71,7 +89,7 @@ function Header() {
 
       <div className="intro">
         <Container id="cont">
-          <h2> {">"} Hello world! 👋</h2>
+          <h2> {">"} Hi there! 👋</h2>
           <h2> {">"} I'm Ritvik</h2>
         </Container>
       </div>

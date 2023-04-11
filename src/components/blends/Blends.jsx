@@ -14,14 +14,10 @@ import {
 
 function projectfnc(x) {
   return (
-    <div
-      className="project"
-      
-      style={{ fontFamily: "Montserrat, sans-serif" }}
-    >
+    <div className="project" style={{ fontFamily: "Montserrat, sans-serif" }}>
       <Row className="mx-3 blendres">
         {x.map((project) => (
-          <Col className="p-0">
+          <Col className="p-0" key={project.id}>
             <Card
               style={{
                 background: "#def4c6",
@@ -38,9 +34,12 @@ function projectfnc(x) {
                     className="text-light"
                     target="_blank"
                     rel="noreferrer"
-                    style={{"backgroundColor":"transparent"}}
+                    style={{ backgroundColor: "transparent" }}
                   >
-                    <i class="fa-solid fa-up-right-from-square" style={{"backgroundColor":"transparent"}} ></i>
+                    <i
+                      className="fa-solid fa-up-right-from-square"
+                      style={{ backgroundColor: "transparent" }}
+                    ></i>
                   </a>
                 </CardTitle>
               </CardImgOverlay>
@@ -70,7 +69,11 @@ function Blends() {
             setIsOpen(!isOpen);
           }}
           id="button"
-          style={isOpen?{backgroundColor:"#88c0d0"}:{backgroundColor:"#5e81ac"}}
+          style={
+            isOpen
+              ? { backgroundColor: "#88c0d0" }
+              : { backgroundColor: "#5e81ac" }
+          }
         >
           {isOpen ? "Show less" : "Show more"}
         </Button>
