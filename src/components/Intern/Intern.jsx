@@ -1,6 +1,7 @@
 import React from "react";
 import "./Intern.scss";
 import iitm from "../assets/intern1.png";
+import drdo from "../assets/intern2.png";
 import {
   Card,
   CardImg,
@@ -13,6 +14,7 @@ import {
 const interns = [
   {
     id: 0,
+    pic: iitm,
     place: "Indian Institute of Technology, Bombay",
     city: "Mumbai  ",
     duration: "  June-July 2022",
@@ -21,6 +23,18 @@ const interns = [
     learned:
       "I worked with various manufaturing equipments and processes including cutting using wire edm and rotating mechanical polisher. The primary equipment we used for testing is Axial Fatigue System. Read the full report ",
     rep: "https://docs.google.com/document/d/1fHXIdOZS-QLUtlkrLItH7w0EzSFILGu5-J10c0fqmVI/edit?usp=sharing",
+  },
+  {
+    id: 0,
+    pic: drdo,
+    place: "Centre for Fire, Explosive and Environment Safety, DRDO",
+    city: "Delhi  ",
+    duration: "  June-July 2023",
+    description:
+      "In one month of on-site training at the institute, I studied about blast waves, their impact and how to minimise their effects. I also performed detailed simulations on ANSYS software using explicit dynamics and autodyn.",
+    learned:
+      "I learned about the physics of explosion and explosives along with a detailed study in blast waves and it's impact using computer simulations which were performed using Autodyn. Read the full report ",
+    rep: "https://docs.google.com/document/d/179A9F8y3h7D2x2fT8sLbTECGbSyDENGeDNZdNXTswys/edit?usp=sharing",
   },
 ];
 
@@ -32,7 +46,7 @@ function Intern() {
         <Card className="mb-3 mx-5" key={item.id}>
           <CardImg
             alt="Card image cap"
-            src={iitm}
+            src={item.pic}
             style={{
               height: 180,
             }}
