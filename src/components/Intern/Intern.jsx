@@ -21,8 +21,8 @@ const interns = [
     description:
       "I have worked under Prof. Amit Singh and Prof. Sushil Kumar in IIT Bombay on the topic of “Microstructure evolution and modeling the stress response of Ti-6Al-4V alloy during low cycle fatigue”. In my time there, I developed an interest in various manufacturing processes and technologies used in research and production.",
     learned:
-      "I worked with various manufaturing equipments and processes including cutting using wire edm and rotating mechanical polisher. The primary equipment we used for testing is Axial Fatigue System. Read the full report ",
-    rep: "https://docs.google.com/document/d/1fHXIdOZS-QLUtlkrLItH7w0EzSFILGu5-J10c0fqmVI/edit?usp=sharing",
+      "I worked with various manufaturing equipments and processes including cutting using wire edm and rotating mechanical polisher. The primary equipment we used for testing is Axial Fatigue System. Read all about it ",
+    rep: "https://docs.google.com/document/d/e/2PACX-1vTk5D-Q6jE-WPDVRoUyfEEjdkzXI1t-lnqsXWfmpATuMLluDfFgyVG-32fx1L0Vsm971nqAdVaOSis9/pub",
   },
   {
     id: 0,
@@ -34,7 +34,7 @@ const interns = [
       "In one month of on-site training at the institute, I studied about blast waves, their impact and how to minimise their effects. I also performed detailed simulations on ANSYS software using explicit dynamics and autodyn.",
     learned:
       "I learned about the physics of explosion and explosives along with a detailed study in blast waves and it's impact using computer simulations which were performed using Autodyn. Read the full report ",
-    rep: "https://docs.google.com/document/d/179A9F8y3h7D2x2fT8sLbTECGbSyDENGeDNZdNXTswys/edit?usp=sharing",
+    rep: "https://docs.google.com/document/d/e/2PACX-1vQVXEb1VU1I8bb1-WfbVWuieH32dfvWxqwr560wHOvu603IlkhCp5O4KPOualVs_8tSz1zIvJXU210x/pub",
   },
 ];
 
